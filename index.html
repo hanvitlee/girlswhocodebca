@@ -65,16 +65,27 @@
       align-items: center;
       justify-content: center;
     }
-    .curve{
-      width:100px;
-      height:500px;
-      border:1px #000 solid;
-      border-radius:100%;
+
+    .holder {
+      /* Clip edges, as some of the lines don't terminate nicely. */
+      overflow: hidden;
+      position: relative;
+      width: 200px;
+      height: 50px;
     }
-    #wrapper{
-      overflow:hidden;
-      width:40px;
-      height:200px;
+    
+    .ellipse {
+      position: absolute;
+      background: radial-gradient(ellipse, transparent, transparent 7px, black 7px, black 10px, transparent 11px);
+      background-size: 36px 40px;
+      width: 200px;
+      height: 20px;
+    }
+    
+    .ellipse2 {
+      top: 20px;
+      left: 18px;
+      background-position: 0px -20px;
     }
 
   </style>
@@ -112,8 +123,9 @@
     <!-- Text content -->
     <div style="flex: 1; min-width: 300px; padding-right: 20px;">
       <h3 style="color:#049c94; font-size:50px; font-weight:700; margin-right:0px;">OUR MISSION</h3>
-    <div id="wrapper">
-      <div class="curve"></div>
+    <div class="holder">
+      <div class="ellipse"></div>
+      <div class="ellipse ellipse2"></div>
     </div>
       <img src="/images/Line.png" alt="Decorative line" style="width:150px;"><img src="/images/Line.png" alt="Decorative line" style="width:150px;">
       <p style="font-size:25px;">
