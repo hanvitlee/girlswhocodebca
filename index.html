@@ -5,10 +5,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+  <link href='https://fonts.googleapis.com/css?family=Borel' rel='stylesheet'>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   <link rel="icon" href="https://union.rpi.edu/media/images/GWC_Logo_Transparent_Background.height-300.png">
+  <link href="https://fonts.cdnfonts.com/css/proggy-clean" rel="stylesheet">>
+  <link href="https://fonts.cdnfonts.com/css/dejavu-sans-mono" rel="stylesheet">
   <style>
     .WaveSeparator {
       width: 100%;
@@ -24,41 +27,48 @@
       width:100%;         /* scale to viewport */
       height:13px;        /* keep your desired height */
       max-width:100%;
+      margin-top:-20px;
     }
     body, h1, h2, h3, h4, h5, h6, p, a {
       font-family: "Roboto", sans-serif;
-      font-weight: 350;
-      color: #003046;
+      font-weight: 100;
+      color: #0a545d;
       letter-spacing: 0px;
     }
-    h1, h2, h3, h4, h5, h6{
-        font-weight: 450;
-        font-size:x-large;
+    div{
+      color:#0a545d;
     }
-    h1{
-      color: #083444;
+    h1, h2, h3, h4, h5, h6{
+        font-family: 'Borel';
+        font-weight: 350;
+        line-height: 1.1;
+    }
+     h1{
+      color: #089c94;
       font-size:60px;
-      font-weight:850;
+      font-weight:570;
       margin-right:0px;
-      margin-bottom:0px;
+      margin-bottom:-20px;
     }
     h3{
-      font-size: 18px;
-      font-weight:750;
-      color: #083444;
+      font-size: 20px;
+      margin-bottom:5px;
+      font-family: "Roboto", sans-serif;
+      font-weight:650;
+      color: #089c94;
     }
     p{
       margin-top: 0px;
       margin-bottom:0px;
       font-size: 18px;
-      color: #083444;
-      font-weight:370;
+      font-weight:300;
+      font-family: 'DejaVu Sans Mono', sans-serif;
     }
     body {
       padding-top: 2%;
       background-size: 100% 100%;
       background-position: 0px 0px,0px 0px,0px 0px,0px 0px,0px 0px,0px 0px,0px 0px,0px 0px,0px 0px,0px 0px,0px 0px;
-      background-image: radial-gradient(18% 28% at 24% 50%, #FFF9E2 7%, #073AFF00 100%),radial-gradient(18% 28% at 18% 71%, #FFFFFF59 6%, #073AFF00 100%),radial-gradient(70% 53% at 36% 76%, #FEEFEE 0%, #073AFF00 100%),radial-gradient(42% 53% at 15% 94%, #FFFFFFFF 7%, #073AFF00 100%),radial-gradient(42% 53% at 34% 72%, #FFF3E8 7%, #073AFF00 100%),radial-gradient(18% 28% at 35% 87%, #FFFFFFFF 7%, #073AFF00 100%),radial-gradient(31% 43% at 7% 98%, #FFF3E8 24%, #073AFF00 100%),radial-gradient(21% 37% at 72% 23%, #D7F9F4 24%, #073AFF00 100%),radial-gradient(35% 56% at 91% 74%, #FFF9E2 9%, #073AFF00 100%),radial-gradient(74% 86% at 67% 38%, #D7F9F4 24%, #073AFF00 100%),linear-gradient(125deg, #FEEFEE 1%, #FFF3E8 100%);
+      background-image: radial-gradient(18% 28% at 24% 50%, #effffd 7%, #073AFF00 100%),radial-gradient(18% 28% at 18% 71%, #FFFFFF59 6%, #073AFF00 100%),radial-gradient(70% 53% at 36% 76%, #fff8f8 0%, #073AFF00 100%),radial-gradient(42% 53% at 15% 94%, #FFFFFFFF 7%, #073AFF00 100%),radial-gradient(42% 53% at 34% 72%, #fffaf5 7%, #073AFF00 100%),radial-gradient(18% 28% at 35% 87%, #FFFFFFFF 7%, #073AFF00 100%),radial-gradient(31% 43% at 7% 98%, #fffaf5 24%, #073AFF00 100%),radial-gradient(21% 37% at 72% 23%, #effffd 24%, #073AFF00 100%),radial-gradient(35% 56% at 91% 74%, #FFF9E2 9%, #073AFF00 100%),radial-gradient(74% 86% at 67% 38%, #D7F9F4 24%, #073AFF00 100%),linear-gradient(125deg, #FEEFEE 1%, #FFF3E8 100%);
     }
     .team-card {
         flex: 1 1 17%;
@@ -101,59 +111,78 @@
     .wavy-text {
       text-decoration-line: underline;
       text-decoration-style: wavy;
-      text-decoration-color: #6eceb2;
+      text-decoration-color: #d8f5ffff;
       text-decoration-weight:200;
-      color:#049c94;
       font-size:50px;
       font-weight:700;
       margin-right:0px;
     }
 
     .member-image{
-      width:130px;
-      height: 140px;
+      width:200px;
+      height: 210px;
       object-fit: cover;
       opacity:1;
       mix-blend-mode: normal;
+      margin-bottom:10px;
     }
 
+    .mission-box{
+      padding:30px;
+      width:100%;
+      background-size: 100% 100%;
+      background-position: 0px 0px,0px 0px,0px 0px,0px 0px,0px 0px,0px 0px,0px 0px,0px 0px,0px 0px,0px 0px,0px 0px;
+      background-image: radial-gradient(18% 28% at 24% 50%, #f9ffca 7%, #073AFF00 100%),radial-gradient(18% 28% at 18% 71%, #FFFFFF59 6%, #073AFF00 100%),radial-gradient(70% 53% at 36% 76%, #b8ffe5 0%, #073AFF00 100%),radial-gradient(42% 53% at 15% 94%, #FFFFFFFF 7%, #073AFF00 100%),radial-gradient(42% 53% at 34% 72%, #ffe0c4 7%, #073AFF00 100%),radial-gradient(18% 28% at 35% 87%, #FFFFFFFF 7%, #073AFF00 100%),radial-gradient(31% 43% at 7% 98%, #ffd7b2 24%, #073AFF00 100%),radial-gradient(21% 37% at 72% 23%, #c8fff7 24%, #073AFF00 100%),radial-gradient(35% 56% at 91% 74%, #fffda5 9%, #073AFF00 100%),radial-gradient(74% 86% at 67% 38%, #ccfff7 24%, #073AFF00 100%),linear-gradient(125deg, #ffef9d 1%, #FFF3E8 100%);
+    }
+
+    .title{
+      color:#489694;
+      margin-bottom:10px;
+    }
   </style>
 </head>
 <body>
 
 <!-- Navbar -->
 <div class="w3-top">
-  <div class="w3-bar w3-white w3-wide w3-padding w3-card" style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap;">
-    <a href="index.html" class="w3-bar-item w3-button" style="flex:1;">
-      <img src="./images/gwctext.png" alt="Logo" style="max-width: 20vw;">
+  <div class="w3-bar w3-white w3-wide w3-padding" style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; box-shadow: 0px 0px 0px #FFFFFF00; background-size: 100% 300%; 
+      background-position: 0px 0px,0px 0px,0px 0px,0px 0px,0px 0px,0px 0px,0px 0px,0px 0px,0px 0px,0px 0px,0px 0px;
+      background-image: radial-gradient(18% 28% at 24% 50%, #effffd 7%, #073AFF00 100%),radial-gradient(18% 28% at 18% 71%, #FFFFFF59 6%, #073AFF00 100%),radial-gradient(70% 53% at 36% 76%, #fff8f8 0%, #073AFF00 100%),radial-gradient(42% 53% at 15% 94%, #FFFFFFFF 7%, #073AFF00 100%),radial-gradient(42% 53% at 34% 72%, #fffaf5 7%, #073AFF00 100%),radial-gradient(18% 28% at 35% 87%, #FFFFFFFF 7%, #073AFF00 100%),radial-gradient(31% 43% at 7% 98%, #fffaf5 24%, #073AFF00 100%),radial-gradient(21% 37% at 72% 23%, #effffd 24%, #073AFF00 100%),radial-gradient(35% 56% at 91% 74%, #FFF9E2 9%, #073AFF00 100%),radial-gradient(74% 86% at 67% 38%, #f4fffd 24%, #073AFF00 100%),linear-gradient(125deg, #fff4f3 1%, #FFF3E8 100%);">
+    <a href="index.html" class="w3-bar-item w3-button" style="flex:1; background-color: #FFFFFF00;">
+      <img src="./images/gwctext.png" alt="Logo" style="max-width: 20vh;">
     </a>
   
-    <div class="w3-bar-item" style="flex: 2; text-align: center; font-size: 2vw; color: #003046; letter-spacing: 0px; font-weight:500;">
-      For leadership opportunities, email your resume to: <a href="mailto:bcagwc@gmail.com">bcagwc@gmail.com</a>
+    <div class="w3-bar-item" style="flex: 2; text-align: center; font-size: 2vw; letter-spacing: 0px; font-weight:500;">
+      For leadership opportunities,<br>contact: <a href="mailto:bcagwc@gmail.com">bcagwc@gmail.com</a>
     </div>
   
     <div class="w3-bar-item w3-right w3-hide-small" style="flex: 1; text-align: right; margin-top: 11px; margin-right:20px;">
-      <a href="#about" class="w3-button" style="font-weight:500; font-size:15px;">ABOUT</a>
+      <a href="#about" class="w3-button" style="font-weight:570; font-size:25px; font-family:'Borel'; color: #089c94;">about</a>
     </div>
   </div>
 </div>
 
 <header class="GWCxBCA">
   <div class="w3-display-middle w3-center">
-    <img src="/images/gwclogo.png" alt="Logo" style="width: 100%; height: auto; z-index: 2; padding-top:20px; opacity: 0.9;">
+    <img src="/images/gwclogo.png" alt="Logo" style="width: auto; height: 70vh; z-index: 2; padding-top:20px; opacity: 0.9;">
   </div>
 </header>
 
 <br><br><br><br>
-<div style="width:100%; background-color: #d8f9f4;">
-  <div class="w3-container w3-padding-64" style="width:70%; border-radius:20px; margin:auto; padding:70px;" id="about">
+<div class="mission-box">
+  <div class="w3-container w3-padding-64" style="width:80%; border-radius:20px; margin:auto; padding:7vw;" id="about";>
     <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap;">
   
       <div style="flex: 1; min-width: 300px; padding-right: 20px;">
-        <h1>OUR MISSION</h1>
-        <!--<p class="wavy-text">OUR MISSION</p>-->
-        <svg viewBox="0 -0.4 30 0.8" width="70%" height="13" preserveAspectRatio="xMidYMid slice" style="margin-top:0px"> <path fill="none" stroke="#43d6b9" style="visibility: visible;" stroke-width="0.15" stroke-dasharray="50.66169738769531 50.66169738769531" stroke-dashoffset="0" d=
+        <h1>about us</h1>
+        <svg viewBox="0 -0.4 50 0.8" width="100%" height="13" preserveAspectRatio="xMidYMid slice" style="margin-top:-20px"> <path fill="none" stroke="#43d6b9" style="visibility: visible;" stroke-width="0.1" stroke-dasharray="50.66169738769531 50.66169738769531" stroke-dashoffset="0" d=
               "M0,0q0.375,-0.4 0.75,-0.2
+              q0.375,0.4 0.75,0.2q0.375,-0.4 0.75,-0.2
+              q0.375,0.4 0.75,0.2q0.375,-0.4 0.75,-0.2
+              q0.375,0.4 0.75,0.2q0.375,-0.4 0.75,-0.2
+              q0.375,0.4 0.75,0.2q0.375,-0.4 0.75,-0.2
+              q0.375,0.4 0.75,0.2q0.375,-0.4 0.75,-0.2
+              q0.375,0.4 0.75,0.2q0.375,-0.4 0.75,-0.2
               q0.375,0.4 0.75,0.2q0.375,-0.4 0.75,-0.2
               q0.375,0.4 0.75,0.2q0.375,-0.4 0.75,-0.2
               q0.375,0.4 0.75,0.2q0.375,-0.4 0.75,-0.2
@@ -170,25 +199,25 @@
             </path>
         </svg>
         <!--<img src="/images/Line.png" alt="Decorative line" style="width:150px;"><img src="/images/Line.png" alt="Decorative line" style="width:150px;">-->
-        <p style="font-size:25px;font-weight:400">
+        <p style="font-size:20px;font-weight:100;line-height:1.5;margin-top:10px;">
           Our mission through Girls Who Code is to close the gender gap in technology by inspiring, educating, and equipping girls with the computing skills needed to pursue 21st-century opportunities!
         </p>
       </div>
   
       <!-- Image content (right-justified) -->
-      <div style="flex: 1; min-width: 200px; display: flex; justify-content: flex-end;">
-        <img src="/images/Icon.png" alt="Mission illustration" style="width:80%; border-radius:10px;">
+      <div style="flex: 1; min-width: 200px; display: flex; justify-content: flex-end; filter: brightness(100%);">
+        <img src="/images/Icon.png" alt="Mission illustration" style="width:80%; ">
       </div>
     </div>
   </div>
 </div>
 
-  <!--
+
 <br><br><br><br><br>
 <div class="WaveSeparator">
   <div class="DynamicWaveLine">
     <svg viewBox="0 0 2000 13" width="100%" height="13" preserveAspectRatio="none">
-      <path fill="none" stroke="#0d38d3" stroke-width="2" vector-effect="non-scaling-stroke"
+      <path fill="none" stroke="#0000000" stroke-width="2" vector-effect="non-scaling-stroke"
         d="M0,6.5 C4.75,13
         14.25,13 
         19,6.5C23.75,0 
@@ -399,50 +428,57 @@
       </path>
     </svg>
   </div>
-</div> -->
+</div>
   
 <!-- Container -->
-<div class="w3-container w3-padding-64" style="width:70%; height: 98%; margin:auto; align-items: left;" id = "about">
-  <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Meet the members!</h3>
-  <!-- Flex container -->
-  <div class="w3-row-padding w3-grayscale" style="display: flex; flex-wrap: wrap; justify-content: space-between;">
-    <div class="team-card">
-      <img class="member-image" src="/images/Hanvit.jpg" alt="Hanvit Lee">
-      <h3>HANVIT LEE</h3>
-      <p>Co-President</p>
-      <p>Hi! I’m a junior in ATCS. Aside from comp sci, I like to play golf and tennis as well as listen to music!</p>
-    </div>
-    
-    <div class="team-card">
-      <img class="member-image" src="/images/Giada.jpg" alt="Giada Jimenez">
-      <h3>GIADA JIMENEZ</h3>
-      <p>Co-President</p>
-      <p>Hi!! I’m a junior in ATCS. Outside of school I am a competitive figure skater, and I love animals!</p>
-    </div>
-    
-    <div class="team-card">
-      <img class="member-image" src="/images/Yashvi.jpeg" alt="Yashvi Trivedi">
-      <h3>YASHVI TRIVEDI</h3>
-      <p>Officer</p>
-      <p>Hello! I'm a junior in ATCS. I enjoy coding, making art, going on bike rides and walks, and listening to music!</p>
-    </div>
-    
-    <div class="team-card">
-      <img class="member-image" src="/images/Avneet.jpg" alt="Avneet Kaur">
-      <h3>AVNEET KAUR</h3>
-      <p>Officer</p>
-      <p>Hi! I'm a junior in ATCS. Other than coding, I love reading and Indian Classical music--especially playing traditional instruments and singing!</p>
-    </div>
+  <div class="w3-container w3-padding-64" style="width:65%; height: 98%; margin:auto; align-items: left;" id = "about">
+    <h1>meet our members!</h1>
+    <!-- Flex container -->
+    <div style="display: flex; flex-wrap: wrap; justify-content: space-between;">
+      <div class="team-card">
+        <img class="member-image" src="/images/Hanvit.jpg" alt="Hanvit Lee">
+        <h3>HANVIT LEE</h3>
+        <p class="title">Co-President</p>
+        <p>Hi! I’m a junior in ATCS. Aside from comp sci, I like to play golf and tennis as well as listen to music!</p>
+      </div>
+      
+      <div class="team-card">
+        <img class="member-image" src="/images/Giada.jpg" alt="Giada Jimenez">
+        <h3>GIADA JIMENEZ</h3>
+        <p class="title">Co-President</p>
+        <p>Hi!! I’m a junior in ATCS. Outside of school I am a competitive figure skater, and I love animals!</p>
+      </div>
 
-    <div class="team-card">
-      <img class="member-image" src="/images/Olivia.jpg" alt="Olivia Smith">
-      <h3>OLIVIA SMITH</h3>
-      <p>Officer</p>
-      <p>Hello! I'm a junior in ATCS. I enjoy reading, listening to music, and playing or developing games!</p>
-    </div>
+      <div class="team-card">
+      </div>
+      <div class="team-card">
+      </div>
+      
+      <div class="team-card">
+        <img class="member-image" src="/images/Yashvi.jpeg" alt="Yashvi Trivedi">
+        <h3>YASHVI TRIVEDI</h3>
+        <p class="title">Officer</p>
+        <p>Hello! I'm a junior in ATCS. I enjoy coding, making art, going on bike rides and walks, and listening to music!</p>
+      </div>
+      
+      <div class="team-card">
+        <img class="member-image" src="/images/Avneet.jpg" alt="Avneet Kaur">
+        <h3>AVNEET KAUR</h3>
+        <p class="title">Officer</p>
+        <p>Hi! I'm a junior in ATCS. Other than coding, I love reading and Indian Classical music——especially playing traditional instruments and singing!</p>
+      </div>
 
+      <div class="team-card">
+        <img class="member-image" src="/images/Olivia.jpg" alt="Olivia Smith">
+        <h3>OLIVIA SMITH</h3>
+        <p class="title">Officer</p>
+        <p>Hello! I'm a junior in ATCS. I enjoy reading, listening to music, and playing or developing games!</p>
+      </div>
+      <div class="team-card">
+      </div>
+
+    </div>
   </div>
-</div>
 
 </body>
 </html>
