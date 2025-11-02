@@ -10,7 +10,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   <link rel="icon" href="https://union.rpi.edu/media/images/GWC_Logo_Transparent_Background.height-300.png">
-  <link href="https://fonts.cdnfonts.com/css/proggy-clean" rel="stylesheet">>
+  <link href="https://fonts.cdnfonts.com/css/proggy-clean" rel="stylesheet">
   <link href="https://fonts.cdnfonts.com/css/dejavu-sans-mono" rel="stylesheet">
   <style>
     .WaveSeparator {
@@ -57,7 +57,7 @@
       font-weight:650;
       color: #089c94;
     }
-    p{
+    p, a{
       margin-top: 0px;
       margin-bottom:0px;
       font-size: 14px;
@@ -65,7 +65,6 @@
       font-family: 'DejaVu Sans Mono', sans-serif;
     }
     body {
-      padding-top: 2%;
       background-size: 100% 100%;
       background-position: 0px 0px,0px 0px,0px 0px,0px 0px,0px 0px,0px 0px,0px 0px,0px 0px,0px 0px,0px 0px,0px 0px;
       background-image: radial-gradient(18% 28% at 24% 50%, #effffd 7%, #073AFF00 100%),radial-gradient(18% 28% at 18% 71%, #FFFFFF59 6%, #073AFF00 100%),radial-gradient(70% 53% at 36% 76%, #fff8f8 0%, #073AFF00 100%),radial-gradient(42% 53% at 15% 94%, #FFFFFFFF 7%, #073AFF00 100%),radial-gradient(42% 53% at 34% 72%, #fffaf5 7%, #073AFF00 100%),radial-gradient(18% 28% at 35% 87%, #FFFFFFFF 7%, #073AFF00 100%),radial-gradient(31% 43% at 7% 98%, #fffaf5 24%, #073AFF00 100%),radial-gradient(21% 37% at 72% 23%, #effffd 24%, #073AFF00 100%),radial-gradient(35% 56% at 91% 74%, #FFF9E2 9%, #073AFF00 100%),radial-gradient(74% 86% at 67% 38%, #D7F9F4 24%, #073AFF00 100%),linear-gradient(125deg, #FEEFEE 1%, #FFF3E8 100%);
@@ -97,7 +96,7 @@
 
     .GWCxBCA {
       width: 100%;
-      height: 100vh;
+      height: 93vh;
       background-image: url('/images/background25.png');
       background-size: cover;
       background-position: center;
@@ -139,43 +138,71 @@
       color:#489694;
       margin-bottom:10px;
     }
+
+    footer{
+      background-color: #F1FFC2;
+      color:white;
+      padding:20px;
+      position:fixed;
+      bottom:0;
+      width:100%;
+      text-align: center;
+      background-image: radial-gradient(18% 80% at 24% 50%, #effffd 7%, #073AFF00 100%),radial-gradient(18% 28% at 18% 71%, #FFFFFF59 6%, #073AFF00 100%),radial-gradient(70% 53% at 36% 76%, #fff8f8 0%, #073AFF00 100%),radial-gradient(42% 53% at 15% 94%, #FFFFFFFF 7%, #073AFF00 100%),radial-gradient(42% 53% at 34% 72%, #fffaf5 7%, #073AFF00 100%),radial-gradient(18% 28% at 35% 87%, #FFFFFFFF 7%, #073AFF00 100%),radial-gradient(31% 43% at 7% 98%, #fffaf5 24%, #073AFF00 100%),radial-gradient(21% 37% at 72% 23%, #effffd 24%, #073AFF00 100%),radial-gradient(35% 56% at 91% 74%, #FFF9E2 9%, #073AFF00 100%),radial-gradient(74% 100% at 67% 38%, #f4fffd 24%, #073AFF00 100%),linear-gradient(125deg, #fff4f3 1%, #FFF3E8 100%);
+    }
+
+    header{
+      position: fixed;
+      width:100%;
+      z-index:999;
+      top:0;
+      display:flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      box-shadow: 0px 0px 0px #FFFFFF00;
+      background-size: 100% 300%;
+      background-position: 0px 0px,0px 0px,0px 0px,0px 0px,0px 0px,0px 0px,0px 0px,0px 0px,0px 0px,0px 0px,0px 0px;
+      background-image: radial-gradient(18% 28% at 24% 50%, #effffd 7%, #073AFF00 100%),radial-gradient(18% 28% at 18% 71%, #FFFFFF59 6%, #073AFF00 100%),radial-gradient(70% 53% at 36% 76%, #fff8f8 0%, #073AFF00 100%),radial-gradient(42% 53% at 15% 94%, #FFFFFFFF 7%, #073AFF00 100%),radial-gradient(42% 53% at 34% 72%, #fffaf5 7%, #073AFF00 100%),radial-gradient(18% 28% at 35% 87%, #FFFFFFFF 7%, #073AFF00 100%),radial-gradient(31% 43% at 7% 98%, #fffaf5 24%, #073AFF00 100%),radial-gradient(21% 37% at 72% 23%, #effffd 24%, #073AFF00 100%),radial-gradient(35% 56% at 91% 74%, #FFF9E2 9%, #073AFF00 100%),radial-gradient(74% 86% at 67% 38%, #f4fffd 24%, #073AFF00 100%),linear-gradient(125deg, #fff4f3 1%, #FFF3E8 100%);
+    }
+
+    .header-item{
+      padding-top:25px;
+      padding-bottom:25px;
+      padding-left:150px;
+      padding-right:150px;
+    }
+    .header-link{
+      font-weight:570;
+      font-size:25px;
+      font-family:'Borel';
+      color: #089c94;
+      margin:0px;
+      text-decoration:none;
+    }
+    .header-logo{
+      max-width: 15vh;
+    }
   </style>
 </head>
+
 <body>
-
-<!-- Navbar -->
-<div class="w3-top">
-  <div class="w3-bar w3-white w3-wide w3-padding" style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; box-shadow: 0px 0px 0px #FFFFFF00; background-size: 100% 300%; 
-      background-position: 0px 0px,0px 0px,0px 0px,0px 0px,0px 0px,0px 0px,0px 0px,0px 0px,0px 0px,0px 0px,0px 0px;
-      background-image: radial-gradient(18% 28% at 24% 50%, #effffd 7%, #073AFF00 100%),radial-gradient(18% 28% at 18% 71%, #FFFFFF59 6%, #073AFF00 100%),radial-gradient(70% 53% at 36% 76%, #fff8f8 0%, #073AFF00 100%),radial-gradient(42% 53% at 15% 94%, #FFFFFFFF 7%, #073AFF00 100%),radial-gradient(42% 53% at 34% 72%, #fffaf5 7%, #073AFF00 100%),radial-gradient(18% 28% at 35% 87%, #FFFFFFFF 7%, #073AFF00 100%),radial-gradient(31% 43% at 7% 98%, #fffaf5 24%, #073AFF00 100%),radial-gradient(21% 37% at 72% 23%, #effffd 24%, #073AFF00 100%),radial-gradient(35% 56% at 91% 74%, #FFF9E2 9%, #073AFF00 100%),radial-gradient(74% 86% at 67% 38%, #f4fffd 24%, #073AFF00 100%),linear-gradient(125deg, #fff4f3 1%, #FFF3E8 100%);">
-    <a href="index.html" class="w3-bar-item w3-button" style="flex:1; background-color: #FFFFFF00;">
-      <img src="./images/gwctext.png" alt="Logo" style="max-width: 20vh;">
-    </a>
-  
-    <div class="w3-bar-item" style="flex: 2; text-align: center; font-size: 2vw; letter-spacing: 0px; font-weight:500;">
-      For leadership opportunities,<br>contact: <a href="mailto:bcagwc@gmail.com">bcagwc@gmail.com</a>
-    </div>
-  
-    <div class="w3-bar-item w3-right w3-hide-small" style="flex: 1; text-align: right; margin-top: 11px; margin-right:20px;">
-      <a href="#about" class="w3-button" style="font-weight:570; font-size:25px; font-family:'Borel'; color: #089c94;">about</a>
-    </div>
+<header>
+  <div class="header-item"><img class = "header-logo" src="./images/gwctext.png" alt="Logo"></div>
+  <div class="header-item">
+    <a href="#about" class="header-link">about</a>
   </div>
-</div>
-
-<header class="GWCxBCA">
-  <!--<div class="w3-display-middle w3-center">
-    <img src="/images/gwclogo.png" alt="Logo" style="width: auto; height: 30vh; z-index: 2; padding-top:20px; opacity: 0.9;">
-  </div>-->
 </header>
+
+<div class="GWCxBCA"></div>
 
 <br><br><br><br>
 <div class="mission-box">
-  <div class="w3-container w3-padding-64" style="width:80%; border-radius:20px; margin:auto; padding:7vw;" id="about";>
+  <div class="w3-container w3-padding-64" style="width:70%; border-radius:20px; margin:auto; padding:7vw;" id="about";>
     <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap;">
   
       <div style="flex: 1; min-width: 300px; padding-right: 20px;">
         <h1>about us</h1>
-        <svg viewBox="0 -0.4 50 0.8" width="100%" height="13" preserveAspectRatio="xMidYMid slice" style="margin-top:-20px"> <path fill="none" stroke="#43d6b9" style="visibility: visible;" stroke-width="0.1" stroke-dasharray="50.66169738769531 50.66169738769531" stroke-dashoffset="0" d=
+        <svg viewBox="0 -0.4 50 0.8" width="400px" height="13" preserveAspectRatio="xMidYMid slice" style="margin-top:-20px"> <path fill="none" stroke="#43d6b9" style="visibility: visible;" stroke-width="0.1" stroke-dasharray="50.66169738769531 50.66169738769531" stroke-dashoffset="0" d=
               "M0,0q0.375,-0.4 0.75,-0.2
               q0.375,0.4 0.75,0.2q0.375,-0.4 0.75,-0.2
               q0.375,0.4 0.75,0.2q0.375,-0.4 0.75,-0.2
@@ -199,15 +226,11 @@
             </path>
         </svg>
         <!--<img src="/images/Line.png" alt="Decorative line" style="width:150px;"><img src="/images/Line.png" alt="Decorative line" style="width:150px;">-->
-        <p style="font-size:20px;font-weight:100;line-height:1.5;margin-top:10px;">
+        <p style="font-size:20px;font-weight:100;line-height:1.5;margin-top:10px;margin-right:20px;">
           Our mission through Girls Who Code is to close the gender gap in technology by inspiring, educating, and equipping girls with the computing skills needed to pursue 21st-century opportunities!
         </p>
       </div>
   
-      <!-- Image content (right-justified) -->
-      <div style="flex: 1; min-width: 200px; display: flex; justify-content: flex-end; filter: brightness(100%);">
-        <img src="/images/Icon.png" alt="Mission illustration" style="width:80%; ">
-      </div>
     </div>
   </div>
 </div>
@@ -479,6 +502,8 @@
 
     </div>
   </div>
-
+  <footer>
+    <p style="font-size: 20px;">For leadership opportunities, contact: <a style="font-size: 20px;" href="mailto:bcagwc@gmail.com">bcagwc@gmail.com</a></p>
+  </footer>
 </body>
 </html>
